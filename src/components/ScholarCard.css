@@ -1,0 +1,262 @@
+.scholarCard__main {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fefefe;
+  color: #fefefe;
+  height: 140px;
+  border-radius: 10px;
+  margin: 0 10px 20px 10px;
+  padding: 5px 10px;
+}
+
+.scholarScard__top {
+  height: 23%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "adventurer yesterday today wallet ingame claimed transfer";
+  border-bottom: 1px solid #fefefe;
+  padding: 0 5px 5px 5px;
+}
+
+.scholarCard__adventurerSlp {
+  grid-area: adventurer;
+}
+
+.scholarCard__yesterdaySlp {
+  grid-area: yesterday;
+}
+
+.scholarCard__todaySlp {
+  grid-area: today;
+}
+
+.scholarCard__totalSlpWallet {
+  grid-area: wallet;
+}
+
+.scholarCard__totalSlpInGame {
+  grid-area: ingame;
+}
+
+.scholarCard__totalSlpClaimed {
+  grid-area: claimed;
+}
+
+.scholarCard__transferAddress {
+  grid-area: transfer;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.scholarCard__transferAddress:hover {
+  transform: scale(1.1);
+}
+
+.scholarCard__bottom {
+  height: 77%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "address average total manager scholar next mmr";
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.scholarCard__nicknameWrapper {
+  grid-area: address;
+  display: flex;
+  flex-direction: column;
+}
+
+.scholarCard__nickname {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.scholarCard__axies {
+  margin: 0 0 0 -12px;
+  display: flex;
+  max-width: 100px;
+}
+
+.scholarCard__axieImg {
+  width: 60px;
+  overflow: hidden;
+}
+
+.scholarCard__averageSlpDay {
+  grid-area: average;
+  display: flex;
+  flex-direction: column;
+}
+
+.scholarCard__totalSlp {
+  grid-area: total;
+  display: flex;
+  flex-direction: column;
+}
+
+.scholarCard__managerPercentage {
+  grid-area: manager;
+  display: flex;
+  flex-direction: column;
+}
+
+.scholarCard__scholarPercentage {
+  grid-area: scholar;
+  display: flex;
+  flex-direction: column;
+}
+
+.scholarCard__dateNextClaim {
+  grid-area: next;
+  display: flex;
+  flex-direction: column;
+}
+
+.scholarCard__nextClaimValue {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.scholarCard__mmr {
+  grid-area: mmr;
+  display: flex;
+  flex-direction: column;
+}
+
+.scholarCard__value {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 5px;
+  min-width: 60px;
+}
+
+.scholarCard__slpLabelTop {
+  font-size: 0.6rem;
+}
+
+.scholarCard__slpLabelBottom {
+  font-size: 0.8rem;
+}
+
+.scholarCard__profileLink {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+@media (max-width: 1400px) {
+  .scholarCard__main {
+    height: 230px;
+  }
+
+  .scholarScard__top {
+    height: 23%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr;
+    grid-template-areas:
+      "adventurer yesterday wallet claimed"
+      "adventurer today ingame transfer";
+    vertical-align: center;
+  }
+
+  .scholarCard__bottom {
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr;
+    grid-template-areas:
+      "address address manager next"
+      "average total scholar mmr";
+    margin: 5px 0;
+  }
+
+  .scholarCard__nicknameWrapper {
+    display: flex;
+    flex-direction: row;
+    min-width: 290px;
+  }
+
+  .scholarCard__axieImg {
+    width: 120px;
+    margin-top: -5px;
+  }
+
+  .scholarCard__profileLink {
+    margin-top: 100px;
+  }
+
+  .scholarCard__wrap {
+    min-width: 100px;
+  }
+
+  .scholarCard__axies {
+    max-width: 250px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  .scholarScard__top {
+    grid-template-columns: 30% 30% 20% 20%;
+  }
+  .scholarCard__bottom {
+    grid-template-columns: 30% 30% 20% 20%;
+    /* grid-template-areas:
+      "address address next mmr"
+      "average total manager scholar "; */
+  }
+
+  .scholarCard__nicknameWrapper {
+    display: flex;
+    flex-direction: row;
+    min-width: 190px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .scholarCard__axieImg {
+    width: 80px;
+    margin-top: -5px;
+  }
+
+  .scholarCard__nicknameWrapper {
+    display: flex;
+    flex-direction: row;
+    min-width: 100px;
+  }
+
+  .scholarScard__top {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* .scholarCard__bottom {
+    grid-template-columns: repeat(4, 1fr);
+  } */
+
+  .scholarCard__axieImg {
+    margin-top: 0;
+  }
+
+  /* .scholarCard__bottom {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "address average total manager scholar next mmr";
+    margin-top: 5px;
+    padding: 5px;
+  } */
+}
+
+@media (max-width: 980px) {
+  .scholarCard__nicknameWrapper {
+    display: flex;
+    flex-direction: row;
+    min-width: 80px;
+  }
+
+  .scholarCard__axies {
+    max-width: 150px;
+    margin-top: 0;
+  }
+}

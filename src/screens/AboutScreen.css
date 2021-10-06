@@ -1,0 +1,6 @@
+.aboutScreen__main {
+  display: flex;
+  flex: 1;
+  background-color: #242735;
+  color: #fefefe;
+}

@@ -1,0 +1,60 @@
+.toolbar__main {
+  width: 100%;
+  height: 60px;
+  background-color: #11131b;
+  color: #fefefe;
+  text-align: center;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  margin-left: 200px;
+}
+
+.toolbar__settings {
+  margin: 10px 15px 0 0;
+  cursor: pointer;
+}
+
+.toolbar__settings:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.toolbar__coins {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar__title {
+  margin-left: 20px;
+}
+
+@media (max-width: 750px) {
+  .toolbar__mainWrapper {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .toolbar__main {
+    height: 90px;
+    line-height: 30px;
+    flex-direction: column;
+  }
+
+  .toolbar__mainWrapper {
+    height: 40px;
+    display: flex;
+  }
+
+  .toolbar__title {
+    margin-top: 10px;
+  }
+
+  .toolbar__coins {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px 10px 15px;
+  }
+}

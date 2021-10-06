@@ -1,0 +1,59 @@
+.axieHover__main {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fefefe;
+  padding: 10px;
+}
+
+.axieHover__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.axieHover__nameWrapper {
+  display: flex;
+  margin-left: 20px;
+}
+
+.axieHover__name {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.axieHover__id {
+  font-size: 0.8rem;
+  margin-left: 40px;
+}
+
+.axieHover__breed {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.axieHover__D {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.axieHover__R1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.axieHover__R2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.axieHover__content {
+  display: flex;
+}

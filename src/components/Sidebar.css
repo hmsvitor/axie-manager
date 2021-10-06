@@ -1,0 +1,151 @@
+.sidebar__main {
+  background-color: #11131b;
+  display: flex;
+  flex: 1;
+  transition: all 0.3s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  /* z-index: 10; */
+}
+
+.sidebar__main > ul {
+  list-style: none;
+}
+
+.sidebar__left {
+  z-index: 2;
+  background-color: #11131b;
+  width: 70px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.sidebar__leftClosed {
+  margin-top: 50px;
+}
+
+.sidebar__right {
+  z-index: 1;
+  background-color: #11131b;
+  width: 130px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+  height: 100%;
+  min-height: 100vh;
+}
+
+.sidebar__open {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  text-align: left;
+  width: 100%;
+  color: #fefefe;
+  display: flex;
+  cursor: pointer;
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.sidebar__logoWrapper {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  text-align: left;
+  width: 100%;
+  color: #fefefe;
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.sidebar__open:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.1s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.sidebar__open:hover ~ #dashboardIcon {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.1s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+#dashboardIcon:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.1s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.sidebar__iconHover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.1s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.sidebar__icon:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.1s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.sidebar__icon {
+  width: 100%;
+  text-align: center;
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+  padding-top: 5px;
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.sidebar__menu {
+  width: 100%;
+  text-align: center;
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+  padding-top: 5px;
+  color: #fefefe;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.sidebar__menuClosed {
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.1s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.sidebar__menuClosed:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.1s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.sidebar__close {
+  left: -550px;
+  width: 70px;
+  transition: all 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.sidebar__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: large;
+}
+
+.sidebar__link {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.sidebar__leftIcon {
+  cursor: pointer;
+  font-size: 30px;
+  display: none;
+}
+
+.sidebar__leftIcon:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
